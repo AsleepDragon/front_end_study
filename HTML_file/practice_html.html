@@ -5,7 +5,7 @@
 <html lang="zh-CN">
     <head>
         <!-- 编码设置 -->
-        <meta charste="UTF-8"/>
+        <meta charset="UTF-8"/>
 
         <title>Practice HTML</title>
         
@@ -96,7 +96,79 @@
           * * * * * * *
         </pre>
 
+        <!-- 表单容器：所有表单元素必须放在同一个form标签内 -->
+        <form>
+            <!-- 文本输入框 -->
+            <input type="text" name="数据名称" value="默认输入值" maxlength="6">
+            <br>
 
+            <!-- 密码输入框 -->
+            <input type="password" name="数据名称" value="默认输入值" maxlength="6">
+            <br>
+
+            <!-- 单选框 -->
+            <input type="radio" name="sex" value="female">女
+            <input type="radio" name="sex" value="male">男
+            <br>
+
+            <!-- 复选框 -->
+            <input type="checkbox" name="hobby" value="smoke">抽烟
+            <input type="checkbox" name="hobby" value="drink">喝酒
+            <input type="checkbox" name="hobby" value="perm">烫头
+            <br>
+
+            <!-- 隐藏域 -->
+            <input type="hidden" name="tag" value="100">
+
+            <!-- 提交按钮1 -->
+            <input type="submit" value="点我提交">
+            <br>
+            
+            <!-- 提交按钮2 -->
+            <button>点我提交</button>
+            <br>
+
+            <!-- 重置按钮1 -->
+            <input type="reset" value="重置">
+            <br>
+
+            <!-- 重置按钮2 -->
+            <button type="reset">点我重置</button>
+            <br>
+
+            <!-- 文本域 -->
+            <textarea name="msg" rows="6" cols="10">文本域</textarea>
+            <br>
+
+            <!-- 下拉框 -->
+            <select name="from">
+                <option value="黑">黑龙江</option>
+                <option value="辽">辽宁</option>
+                <option value="吉">吉林</option>
+                <option value="粤" selected>广东</option>
+            </select>
+
+            <fieldset>
+                <legend>主要信息</legend>
+                <label for="zhanghu">账户：</label>
+                <input id="zhanghu" type="text" name="account" maxlength="10"><br>
+                <label>
+                    密码：
+                    <input id="mima" type="password" name="pwd" maxlength="6">
+                </label>
+                <br>
+                性别：
+                <input type="radio" name="gender" value="male" id="nan">
+                <label for="nan">男</label>
+                <label>
+                    <input type="radio" name="gender" value="female" id="nv">女
+                </label>
+            </fieldset>
+        </form>
+
+
+        
+        
 
     </body>
 </html>
